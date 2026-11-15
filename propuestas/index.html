@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuestas · IEEE CS ITVER</title>
+  <meta name="description" content="Cuatro conceptos de landing page para el capítulo estudiantil IEEE Computer Society del ITVER.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #000; --paper: #fff; --blue: #00629b; --orange: #ffa300; --surface: #f2f2f2; --m: clamp(1rem, 2.4vw, 2.25rem); }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Montserrat", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.55; }
+    header { padding: 2rem var(--m) 3rem; display: grid; gap: 1.25rem; }
+    header img { width: 190px; }
+    h1 { margin: 2rem 0 0; font-size: clamp(2.5rem, 1rem + 5vw, 5.5rem); letter-spacing: -0.04em; line-height: 0.95; font-weight: 700; }
+    header p { margin: 0; max-width: 60ch; }
+    ol { list-style: none; margin: 0; padding: 0; }
+    li { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1.5rem; padding: 2.5rem var(--m); }
+    li:nth-child(odd) { background: var(--surface); }
+    h2 { grid-column: 1 / span 4; margin: 0; font-size: clamp(1.75rem, 1rem + 2vw, 3rem); letter-spacing: -0.03em; line-height: 1; }
+    .meta { grid-column: 5 / span 5; display: grid; gap: 0.5rem; }
+    .meta p { margin: 0; }
+    .go { grid-column: 10 / span 3; display: grid; gap: 0.5rem; align-content: start; justify-items: start; }
+    .go a:first-child { display: inline-flex; min-height: 3rem; align-items: center; padding: 0 1.25rem; border-radius: 999px; background: var(--blue); color: var(--paper); font-weight: 600; text-decoration: none; }
+    .go a:first-child:hover { background: var(--ink); }
+    .go a { color: var(--blue); font-weight: 600; }
+    footer { padding: 3rem var(--m); font-size: 0.9375rem; }
+    @media (max-width: 760px) { h2, .meta, .go { grid-column: 1 / -1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="IEEE Computer Society">
+    <h1>Cuatro propuestas de landing</h1>
+    <p>Prototipos de la fase de exploración para el capítulo estudiantil IEEE Computer Society del ITVER. El contenido provisional está marcado en el código; ábrelo con “ver provisional” para resaltarlo en rojo.</p>
+  </header>
+  <main>
+    <ol>
+      <li>
+        <h2>A · Unos y ceros</h2>
+        <div class="meta">
+          <p><strong>Dirección:</strong> solo tipografía en el primer pantallazo; las imágenes llegan después, grandes y pocas.</p>
+          <p><strong>Idea:</strong> la celosía del edificio del ITVER se vuelve un mapa de bits, los unos y ceros del logotipo de IEEE CS.</p>
+          <p><strong>Lo interactivo:</strong> escribe tu nombre y míralo encendido en la celosía.</p>
+        </div>
+        <div class="go"><a href="a-unos-y-ceros/index.html">Abrir propuesta A</a><a href="a-unos-y-ceros/index.html?provisional">Ver provisional</a></div>
+      </li>
+      <li>
+        <h2>B · La paleta del campus</h2>
+        <div class="meta">
+          <p><strong>Dirección:</strong> capítulos de color; cada sección es un campo de un color oficial de IEEE CS.</p>
+          <p><strong>Idea:</strong> los colores de IEEE ya estaban en el campus: el azul de la fachada, el naranja del almendro, el verde de las palmas.</p>
+          <p><strong>Lo interactivo:</strong> siete áreas, siete colores; abre cada área en su color oficial.</p>
+        </div>
+        <div class="go"><a href="b-paleta-del-campus/index.html">Abrir propuesta B</a><a href="b-paleta-del-campus/index.html?provisional">Ver provisional</a></div>
+      </li>
+      <li>
+        <h2>C · Actas</h2>
+        <div class="meta">
+          <p><strong>Dirección:</strong> categoría prestada; la página se viste como un artículo de IEEE y el programa de un congreso.</p>
+          <p><strong>Idea:</strong> el artefacto impreso de IEEE (título, autores, resumen, figuras, referencias reales) presenta al capítulo.</p>
+          <p><strong>Lo interactivo:</strong> firma como coautor; tu nombre entra en la línea de autores, la cita y la carta de intención.</p>
+        </div>
+        <div class="go"><a href="c-actas/index.html">Abrir propuesta C</a><a href="c-actas/index.html?provisional">Ver provisional</a></div>
+      </li>
+      <li>
+        <h2>D · Moderna</h2>
+        <div class="meta">
+          <p><strong>Dirección:</strong> lenguaje de producto tecnológico inspirado en tasteskill.dev: isla de navegación, degradado nocturno, fragmentos de interfaz, rueda de áreas y paso a paso fijo.</p>
+          <p><strong>Idea:</strong> noche azul IEEE sobre el Golfo; el naranja 137 C marca lo activo, como el logo oficial sobre azul.</p>
+          <p><strong>Lo interactivo:</strong> arma tu gafete del capítulo (nombre, color de tu área, celosía grabada, inclinación 3D) y gira la rueda de las siete áreas.</p>
+        </div>
+        <div class="go"><a href="d-moderna/index.html">Abrir propuesta D</a><a href="d-moderna/index.html?provisional">Ver provisional</a></div>
+      </li>
+    </ol>
+  </main>
+  <footer>Las cuatro propuestas usan la paleta y tipografía oficiales de IEEE Computer Society. Pendiente: logotipo maestro de IEEE, lockup oficial del capítulo y contenido real.</footer>
+</body>
+</html>

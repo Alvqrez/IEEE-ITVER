@@ -1,0 +1,24 @@
+# Generado
+dist/
+node_modules/
+.taste-skill/
+
+# Secretos (llaves de autenticación, servicios)
+.env
+.env.*
+!.env.example
+
+# Descargas en bruto de imágenes abiertas: el sitio usa las versiones de assets/img.
+# Se conserva credits.json (licencias y créditos).
+propuestas/assets/found/*
+!propuestas/assets/found/credits.json
+
+# Sistema y editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+npm-debug.log*
+.vscode/*
+!.vscode/extensions.json
+.idea/

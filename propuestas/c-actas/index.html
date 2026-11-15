@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es" data-assets="../assets/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IEEE CS ITVER · Actas del capítulo</title>
+  <meta name="description" content="Capítulo estudiantil de IEEE Computer Society en el Instituto Tecnológico de Veracruz: talleres, conferencias, hackatones, competencias y proyectos de computación.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="IEEE Computer Society en el ITVER">
+  <meta property="og:description" content="El capítulo estudiantil de IEEE Computer Society en el Instituto Tecnológico de Veracruz.">
+  <meta property="og:image" content="../assets/img/campus-itver.webp">
+  <meta property="og:locale" content="es_MX">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="top wrap">
+    <a class="top-logo" href="#inicio" aria-label="IEEE Computer Society, capítulo ITVER: inicio">
+      <img src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="IEEE Computer Society">
+    </a>
+    <nav class="top-links" aria-label="Secciones">
+      <a href="#introduccion">Introducción</a>
+      <a href="#areas">Áreas</a>
+      <a href="#programa">Programa</a>
+      <a href="#comite">Comité</a>
+    </nav>
+    <a class="top-action" href="#convocatoria">Únete al capítulo</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+      <span class="menu-word">Menú</span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#areas">Áreas</a></li>
+        <li><a href="#programa">Programa</a></li>
+        <li><a href="#comite">Comité</a></li>
+        <li><a href="#convocatoria">Únete al capítulo</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="contenido">
+    <!-- TITLE BLOCK: the paper's first page -->
+    <section class="title-block wrap" id="inicio" aria-labelledby="paper-title">
+      <h1 class="paper-title" id="paper-title">IEEE Computer Society<br> en el ITVER</h1>
+      <p class="authors">
+        <span>Capítulo Estudiantil IEEE CS ITVER, Instituto Tecnológico de Veracruz y</span>
+        <label class="author-slot">
+          <span class="visually-hidden">Escribe tu nombre para firmar como coautor</span>
+          <input id="author-name" type="text" maxlength="40" autocomplete="name" placeholder="tu nombre" size="12">
+        </label>
+      </p>
+      <p class="affil">Tecnológico Nacional de México · Veracruz, Ver., México · Noviembre de 2026</p>
+
+      <div class="first-page">
+        <div class="abstract">
+          <p><em class="runin">Resumen—</em>Somos el capítulo estudiantil de IEEE Computer Society en el Instituto Tecnológico de Veracruz. Organizamos talleres, conferencias, hackatones, competencias y proyectos para estudiantes de computación, y conectamos al campus con la red internacional de IEEE, que en 2026 cumple 80 años.</p>
+          <p class="terms"><em class="runin">Términos clave—</em><a href="#areas">desarrollo de software</a>, <a href="#areas">inteligencia artificial</a>, <a href="#areas">ciencia de datos</a>, <a href="#areas">ciberseguridad</a>, <a href="#areas">computación en la nube</a>, <a href="#areas">ingeniería de software</a>, <a href="#areas">tecnologías emergentes</a>.</p>
+          <div class="actions">
+            <a class="btn" href="#convocatoria"><span>Únete al capítulo</span><span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <a class="text-link" href="#programa">Leer el programa</a>
+          </div>
+          <p class="cite" aria-live="polite"><strong>Cómo citarnos:</strong> <span id="cite-line">Capítulo Estudiantil IEEE CS ITVER, “IEEE Computer Society en el ITVER”, Veracruz, 2026.</span></p>
+        </div>
+        <figure class="hero-fig">
+          <div class="fade" data-fade>
+            <img src="../assets/img/campus-itver-gris.webp" width="1024" height="768" fetchpriority="high" decoding="async" alt="Explanada del Instituto Tecnológico de Veracruz con palmeras y el edificio de celosías, en blanco y negro">
+            <img src="../assets/img/eniac-1946.webp" width="1800" height="1236" decoding="async" alt="Dos programadoras frente a los paneles de la ENIAC en 1946">
+          </div>
+          <figcaption><strong>Figura.</strong> La explanada del ITVER en 2026 y la ENIAC en 1946, el año en que comenzó IEEE Computer Society.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION: two columns with citations -->
+    <section class="intro wrap" id="introduccion" aria-labelledby="intro-title">
+      <h2 id="intro-title" data-reveal>Introducción</h2>
+      <div class="cols" data-reveal>
+        <p>IEEE Computer Society tiene su origen en 1946, cuando el American Institute of Electrical Engineers formó su Subcomité de Dispositivos de Cómputo a Gran Escala <a class="ref" href="#ref-1">[1]</a>. Ese mismo año se presentó la ENIAC, una de las primeras computadoras electrónicas de propósito general. En 2026 la sociedad celebra su 80 aniversario <a class="ref" href="#ref-2">[2]</a> y reúne a profesionales, docentes y estudiantes de todas las áreas de la computación.</p>
+        <p>El capítulo estudiantil del Instituto Tecnológico de Veracruz acerca esa red al campus. Su comunidad natural son los estudiantes de Ingeniería en Sistemas Computacionales, 703 inscritos en 2022 según DataMéxico <a class="ref" href="#ref-3">[3]</a>, y de carreras afines que quieren aprender haciendo: talleres prácticos, proyectos en equipo y competencias.</p>
+        <p data-provisional><strong>Misión (borrador).</strong> Acercar a la comunidad estudiantil del ITVER al conocimiento, las herramientas y la red profesional de IEEE Computer Society, con actividades prácticas que conecten el aula con la industria y la investigación.</p>
+        <p data-provisional><strong>Visión (borrador).</strong> Ser un capítulo de referencia en computación en el Golfo de México, reconocido por los proyectos y el talento que forma.</p>
+        <figure class="inline-fig">
+          <img src="../assets/img/eniac-tabla-funciones.webp" width="1800" height="1200" loading="lazy" decoding="async" alt="Hileras de perillas de una tabla de funciones de la ENIAC">
+          <figcaption><strong>Figura.</strong> Tabla de funciones de la ENIAC: los datos se fijaban girando perillas.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- AREAS: comparison set as a real table -->
+    <section class="areas wrap" id="areas" aria-labelledby="areas-title">
+      <h2 id="areas-title" data-reveal>Áreas de interés</h2>
+      <p class="table-cap" data-reveal><strong>Tabla.</strong> Áreas tecnológicas del capítulo y lo que hacemos en cada una.</p>
+      <div class="table-wrap" data-reveal>
+        <table class="cmp">
+          <thead>
+            <tr><th scope="col">Área</th><th scope="col">Qué estudia</th><th scope="col" class="feat">En el capítulo</th><th scope="col">Herramientas de ejemplo</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Desarrollo de software</th><td>Aplicaciones web, móviles y de escritorio</td><td class="feat" data-provisional>Talleres de Git, web y APIs</td><td>Git, JavaScript, Python</td></tr>
+            <tr><th scope="row">Inteligencia artificial</th><td>Modelos que aprenden de datos</td><td class="feat" data-provisional>Retos de clasificación con datos abiertos</td><td>Python, scikit-learn</td></tr>
+            <tr><th scope="row">Ciencia de datos</th><td>Análisis y visualización de datos</td><td class="feat" data-provisional>Análisis con datos públicos de Veracruz</td><td>pandas, SQL</td></tr>
+            <tr><th scope="row">Ciberseguridad</th><td>Ataque y defensa de sistemas</td><td class="feat" data-provisional>Retos de captura de bandera</td><td>Linux, Wireshark</td></tr>
+            <tr><th scope="row">Computación en la nube</th><td>Infraestructura bajo demanda</td><td class="feat" data-provisional>Despliegue con contenedores</td><td>Docker, servicios en la nube</td></tr>
+            <tr><th scope="row">Ingeniería de software</th><td>Requisitos, diseño, pruebas y calidad</td><td class="feat" data-provisional>Pruebas automatizadas y revisión de código</td><td>Git, marcos de pruebas</td></tr>
+            <tr><th scope="row">Tecnologías emergentes</th><td>Cómputo cuántico, IoT y realidad extendida</td><td class="feat" data-provisional>Charlas y prototipos con microcontroladores</td><td>Arduino, Raspberry Pi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES: oversized figure, small cluster -->
+    <section class="work" id="actividades" aria-labelledby="work-title">
+      <h2 class="wrap" id="work-title" data-reveal>Actividades</h2>
+      <article class="block block-1">
+        <figure class="big"><img src="../assets/img/eniac-programacion.webp" width="1340" height="1024" loading="lazy" decoding="async" alt="Dos personas programan la ENIAC conectando cables entre paneles"></figure>
+        <div class="cluster">
+          <div class="cluster-text" data-reveal>
+            <h3>Talleres y conferencias</h3>
+            <p>Talleres prácticos <span data-provisional>de dos a cuatro horas</span> con la computadora abierta, y charlas de profesionales, investigadores y egresados con tiempo para preguntas. Algunas sesiones se comparten en línea con otros capítulos IEEE.</p>
+          </div>
+          <figure class="small"><img src="../assets/img/veracruz-telegrafos-gris.webp" width="1800" height="1200" loading="lazy" decoding="async" alt="Fachada del edificio de Telégrafos en el centro de Veracruz"><figcaption>Edificio de Telégrafos, Veracruz.</figcaption></figure>
+        </div>
+      </article>
+      <article class="block block-2">
+        <figure class="big"><img src="../assets/img/eniac-valvulas.webp" width="1239" height="952" loading="lazy" decoding="async" alt="Un técnico revisa una de las miles de válvulas de la ENIAC"></figure>
+        <div class="cluster">
+          <div class="cluster-text" data-reveal>
+            <h3>Hackatones y competencias</h3>
+            <p>Equipos pequeños, un problema real y un plazo corto. Entrenamos para concursos como IEEEXtreme, la competencia de programación de 24 horas que IEEE organiza para sus miembros estudiantes.</p>
+          </div>
+          <figure class="small"><img src="../assets/img/eniac-1946.webp" width="1800" height="1236" loading="lazy" decoding="async" alt="Programadoras frente a los paneles de la ENIAC"><figcaption>Paneles de la ENIAC, 1946.</figcaption></figure>
+        </div>
+      </article>
+      <article class="block block-3">
+        <figure class="big"><img src="../assets/img/tarjetas-perforadas.webp" width="1800" height="1421" loading="lazy" decoding="async" alt="Un almacén con miles de cajas de tarjetas perforadas apiladas, 1959"></figure>
+        <div class="cluster">
+          <div class="cluster-text" data-reveal>
+            <h3>Proyectos y colaboraciones</h3>
+            <p>Proyectos de semestre con revisiones entre pares y una presentación final, y actividades con otros capítulos, ramas estudiantiles y empresas de la región.</p>
+          </div>
+          <figure class="small"><img src="../assets/img/ulua-1592.webp" width="1800" height="1351" loading="lazy" decoding="async" alt="Dibujo de 1592 del puerto de Veracruz y la fortaleza de San Juan de Ulúa"><figcaption>Veracruz y San Juan de Ulúa, 1592.</figcaption></figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROGRAMME: one type size -->
+    <section class="programme" id="programa" aria-labelledby="prog-title">
+      <div class="wrap">
+        <h2 id="prog-title" data-reveal>Programa</h2>
+        <p class="prog-part" data-reveal>Programa tentativo · ejemplos de formato</p>
+        <table class="lineup">
+          <caption class="visually-hidden">Ejemplos de sesiones del capítulo</caption>
+          <thead class="visually-hidden"><tr><th scope="col">Sesión</th><th scope="col">Formato</th><th scope="col">Sala</th><th scope="col">Fecha</th></tr></thead>
+          <tbody data-provisional>
+            <tr data-reveal><td>Git y GitHub para proyectos en equipo</td><td>Taller</td><td>Laboratorio de cómputo</td><td>Por confirmar</td></tr>
+            <tr data-reveal><td>Cómo se protege una red universitaria</td><td>Conferencia</td><td>Auditorio</td><td>Por confirmar</td></tr>
+            <tr data-reveal><td>Reto de 24 horas del capítulo</td><td>Hackatón</td><td>Campus ITVER</td><td>Por confirmar</td></tr>
+            <tr data-reveal><td>Entrenamiento para IEEEXtreme</td><td>Competencia</td><td>En línea</td><td>Por confirmar</td></tr>
+            <tr data-reveal><td>Python para análisis de datos</td><td>Taller</td><td>Laboratorio de cómputo</td><td>Por confirmar</td></tr>
+            <tr data-reveal><td>Presentación de proyectos del semestre</td><td>Proyectos</td><td>Explanada</td><td>Por confirmar</td></tr>
+          </tbody>
+        </table>
+        <p class="prog-note">Los títulos son ejemplos de formato. El programa real se publicará con fechas, sala y registro.</p>
+      </div>
+    </section>
+
+    <!-- AUTHORS: community and committee -->
+    <section class="authors-sec wrap" id="comite" aria-labelledby="committee-title">
+      <h2 id="committee-title" data-reveal>Sobre los autores</h2>
+      <div class="bio-cols">
+        <p class="bio-lead"><strong>El capítulo</strong> es una comunidad de estudiantes del <mark class="hl hl-orange">Instituto Tecnológico de Veracruz</mark>. Ofrece <mark class="hl hl-cyan">networking</mark> con estudiantes, egresados y profesionales; <mark class="hl hl-yellow">colaboración</mark> en equipos que construyen cosas reales, y <mark class="hl hl-orange">crecimiento profesional y académico</mark> con talleres, competencias y experiencia de liderazgo. No hace falta experiencia previa.</p>
+        <div class="committee">
+          <h3>Comité organizador</h3>
+          <ul class="committee-list" data-mesa>
+            <template><li><span class="role" data-rol></span><span data-nombre></span></li></template>
+        </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL: accordion of IEEE blue tints + a letter of intent -->
+    <section class="call" id="convocatoria" aria-labelledby="call-title">
+      <div class="wrap call-head">
+        <h2 id="call-title" data-reveal>Convocatoria abierta</h2>
+        <p>La convocatoria tiene cinco pasos. Participar en el capítulo empieza el día que nos escribes; afiliarte a IEEE suma la red internacional.</p>
+      </div>
+      <div class="steps wrap" data-steps>
+        <article class="step is-open" style="--c: #002855; --t: #fff">
+          <h3><button type="button" aria-expanded="true" aria-controls="step-1" id="step-1-btn"><span>Escríbenos</span></button></h3>
+          <div class="step-body" id="step-1" role="region" aria-labelledby="step-1-btn"><p>Envía la carta de abajo o acércate a una actividad abierta. Te respondemos con el calendario del semestre.</p></div>
+        </article>
+        <article class="step" style="--c: #00629b; --t: #fff">
+          <h3><button type="button" aria-expanded="false" aria-controls="step-2" id="step-2-btn"><span>Crea tu cuenta IEEE</span></button></h3>
+          <div class="step-body" id="step-2" role="region" aria-labelledby="step-2-btn"><p>Regístrate en <a href="https://www.ieee.org/membership/join/index.html" rel="noopener">ieee.org</a> y elige la membresía estudiantil.</p></div>
+        </article>
+        <article class="step" style="--c: color-mix(in srgb, #00629b 80%, #fff); --t: #000">
+          <h3><button type="button" aria-expanded="false" aria-controls="step-3" id="step-3-btn"><span>Agrega Computer Society</span></button></h3>
+          <div class="step-body" id="step-3" role="region" aria-labelledby="step-3-btn"><p>Suma <a href="https://www.computer.org/membership" rel="noopener">IEEE Computer Society</a> a tu membresía.</p></div>
+        </article>
+        <article class="step" style="--c: color-mix(in srgb, #00629b 60%, #fff); --t: #000">
+          <h3><button type="button" aria-expanded="false" aria-controls="step-4" id="step-4-btn"><span>Registra la rama ITVER</span></button></h3>
+          <div class="step-body" id="step-4" role="region" aria-labelledby="step-4-btn"><p data-provisional>Elige la rama estudiantil del Instituto Tecnológico de Veracruz para quedar afiliado al capítulo.</p></div>
+        </article>
+        <article class="step" style="--c: color-mix(in srgb, #00629b 40%, #fff); --t: #000">
+          <h3><button type="button" aria-expanded="false" aria-controls="step-5" id="step-5-btn"><span>Participa</span></button></h3>
+          <div class="step-body" id="step-5" role="region" aria-labelledby="step-5-btn"><p>Elige un área, entra a un equipo y presenta tu trabajo al final del semestre.</p></div>
+        </article>
+      </div>
+
+      <form class="letter wrap" id="letter">
+        <div class="letter-sheet"><div class="letter-core">
+          <h3>Carta de intención</h3>
+          <p class="letter-date" id="letter-date">Veracruz, Ver., noviembre de 2026.</p>
+          <p class="letter-body">Al capítulo estudiantil de IEEE Computer Society del ITVER: yo,
+            <label class="blank"><span class="visually-hidden">Tu nombre</span><input id="letter-name" name="nombre" type="text" autocomplete="name" placeholder="tu nombre" required size="14"></label>,
+            estudiante de
+            <label class="blank"><span class="visually-hidden">Tu carrera</span><input id="letter-career" name="carrera" type="text" placeholder="tu carrera" size="16"></label>,
+            solicito unirme al capítulo y recibir información de sus actividades.</p>
+          <button class="btn" type="submit"><span>Enviar carta</span><span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+          <p class="letter-help">El botón abre tu correo con la carta lista para enviar.</p>
+        </div></div>
+      </form>
+    </section>
+
+    <!-- CORRESPONDENCE: address in display rows -->
+    <section class="corr" id="contacto" aria-labelledby="corr-title">
+      <h2 class="visually-hidden" id="corr-title">Correspondencia</h2>
+      <p class="row">Instituto Tecnológico de Veracruz</p>
+      <p class="row">Veracruz, Ver., México</p>
+      <p class="row"><a href="#" data-correo data-correo-sin="@computersociety.itver"><span data-correo-texto>@computersociety.itver</span></a></p>
+      <p class="row"><a href="https://www.computer.org" rel="noopener">computer.org</a></p>
+      <p class="row row-hello"><a href="#" data-correo>Escríbenos<span class="round" aria-hidden="true"><svg viewBox="0 0 16 16" width="20" height="20"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></p>
+    </section>
+  </main>
+
+  <!-- FOOTER: references above, wordmark below -->
+  <footer class="foot">
+    <div class="foot-cols wrap">
+      <div>
+        <h2 class="foot-h">Referencias</h2>
+        <ol class="refs">
+          <li id="ref-1">IEEE Computer Society, “History”. <a href="https://www.computer.org/about/cs-history" rel="noopener">computer.org/about/cs-history</a></li>
+          <li id="ref-2">IEEE Computer Society, comunicado de prensa sobre su 80 aniversario, 2026. <a href="https://www.computer.org/press-room/ieee-cs-80th-anniversary" rel="noopener">computer.org/press-room</a></li>
+          <li id="ref-3">Secretaría de Economía, “Instituto Tecnológico de Veracruz”, DataMéxico. <a href="https://www.economia.gob.mx/datamexico/es/profile/institution/instituto-tecnologico-de-veracruz" rel="noopener">economia.gob.mx/datamexico</a></li>
+          <li id="ref-4">IEEE Computer Society, “Brand Identity &amp; Graphic Style Guide”. <a href="https://www.computer.org/about/ieee-computer-society-brand-guide" rel="noopener">computer.org</a></li>
+        </ol>
+      </div>
+      <div>
+        <h2 class="foot-h">Secciones</h2>
+        <ul class="foot-list">
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#programa">Programa</a></li>
+          <li><a href="#convocatoria">Únete al capítulo</a></li>
+          <li><a href="#" data-red="instagram">Instagram</a></li>
+          <li><a href="#" data-red="facebook">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="foot-h">Afiliaciones</h2>
+        <div class="foot-logos">
+          <img src="../assets/logos/ieee-cs-white.png" width="1040" height="318" alt="IEEE Computer Society" loading="lazy">
+        </div>
+        <p class="foot-p">Instituto Tecnológico de Veracruz · Tecnológico Nacional de México</p>
+      </div>
+      <div>
+        <h2 class="foot-h">Créditos de figuras</h2>
+        <p class="foot-p credits">ENIAC, 1946 y c. 1947, y almacén de tarjetas, 1959: dominio público (Ejército de EE. UU., M. Weik y NARA). Tabla de funciones: Logg Tandy, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>. Telégrafos: xiquinhosilva, CC BY 4.0. San Juan de Ulúa, 1592: Jl FilpoC, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA 4.0</a>, adaptada a escala de grises. Todas vía <a href="https://commons.wikimedia.org" rel="noopener">Wikimedia Commons</a>. Campus: archivo del capítulo.</p>
+      </div>
+    </div>
+    <p class="foot-name" aria-hidden="true">IEEE CS ITVER</p>
+    <p class="foot-legal wrap">© 2026 IEEE Computer Society ITVer. IEEE y IEEE Computer Society son marcas de IEEE. <a href="#inicio">Volver arriba</a></p>
+  </footer>
+
+  <script src="../../contenido/capitulo.js"></script>
+  <script src="../../contenido/aplicar.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

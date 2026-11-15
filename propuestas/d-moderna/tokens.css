@@ -1,0 +1,78 @@
+/* IEEE Computer Society ITVer · Tokens del sistema de diseño (Fase 3)
+   Fuente de verdad visual para la landing y las páginas futuras (inicio de sesión, panel, etc.).
+   Colores: solo valores oficiales de la guía de IEEE CS y sus tintes. Tipografía: Montserrat.
+   Construido con design-taste-frontend v1 (diales 8/6/4) y high-end-visual-design. */
+
+:root {
+  /* ---------- color: oficiales ---------- */
+  --navy: #002855;        /* PMS 295 · tinta y fondo nocturno */
+  --blue: #00629b;        /* PMS 3015 · azul IEEE, marca principal */
+  --cyan: #00b5e2;        /* Process Cyan · resplandor y acentos fríos */
+  --orange: #ffa300;      /* PMS 137 C · acento único: acción y estado activo */
+  --white: #ffffff;
+  /* paleta brillante, solo para codificar áreas */
+  --area-software: #00629b;
+  --area-ia: #ffa300;
+  --area-datos: #00b5e2;
+  --area-seguridad: #ba0c2f;
+  --area-nube: #009ca6;
+  --area-ingenieria: #00843d;
+  --area-emergentes: #ffd100;
+
+  /* ---------- color: roles (tintes de oficiales) ---------- */
+  --paper: color-mix(in srgb, #00629b 4%, #ffffff);   /* fondo claro */
+  --surface: var(--white);                             /* tarjetas */
+  --surface-2: color-mix(in srgb, #00629b 8%, #ffffff);/* carcasa del doble bisel */
+  --line: color-mix(in srgb, #002855 10%, #ffffff);    /* bordes de 1px */
+  --ink: var(--navy);
+  --muted: color-mix(in srgb, #002855 72%, #ffffff);   /* texto secundario, 6:1 sobre blanco */
+  --on-dark: var(--white);
+  --on-dark-soft: color-mix(in srgb, #ffffff 84%, #00629b);
+  --accent: var(--orange);
+  --accent-ink: var(--navy);
+  --danger: #ba0c2f;                                    /* PMS 200 C · errores de formulario */
+
+  /* ---------- tipografía ---------- */
+  --font: "Montserrat", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace; /* solo código y datos */
+  --s-small: 0.875rem;                                  /* 14 · metadatos */
+  --s-body: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);    /* 16–17 · texto */
+  --s-lead: clamp(1.0625rem, 0.95rem + 0.5vw, 1.25rem); /* 17–20 · subtítulos */
+  --s-h3: clamp(1.75rem, 1rem + 1.7vw, 2.5rem);         /* 28–40 */
+  --s-h2: clamp(2.125rem, 1.2rem + 2.9vw, 3.5rem);      /* 34–56 */
+  --s-h1: clamp(2.5rem, 0.9rem + 5.1vw, 5.75rem);       /* 40–92 */
+  --track-display: -0.055em;
+  --track-head: -0.045em;
+  --lh-display: 0.98;
+  --lh-text: 1.6;
+
+  /* ---------- espacio (base 4px) ---------- */
+  --sp-1: 0.25rem; --sp-2: 0.5rem; --sp-3: 0.75rem; --sp-4: 1rem; --sp-5: 1.25rem;
+  --sp-6: 1.5rem; --sp-8: 2rem; --sp-10: 2.5rem; --sp-12: 3rem; --sp-16: 4rem;
+  --m: clamp(1rem, 3vw, 2.5rem);                        /* margen de página */
+  --max: 1180px;                                        /* ancho de contenido */
+  --section: clamp(6rem, 4rem + 7vw, 11rem);            /* separación entre secciones */
+
+  /* ---------- radios (doble bisel: interior = exterior - padding) ---------- */
+  --r-pill: 999px;
+  --r-xl: 2rem;
+  --r-l: 1.5rem;
+  --r-m: 0.875rem;
+  --r-s: 0.5rem;
+  --bezel: 0.5rem;
+
+  /* ---------- sombras (difusas, teñidas de navy) ---------- */
+  --shadow-soft: 0 24px 48px -24px color-mix(in srgb, #002855 30%, transparent);
+  --shadow-ui: 0 28px 50px -30px rgba(0, 40, 85, 0.55), 0 0 0 1px rgba(0, 40, 85, 0.08);
+  --edge-light: inset 0 1px 0 rgba(255, 255, 255, 0.12); /* refracción de borde en vidrio */
+
+  /* ---------- movimiento ---------- */
+  --spring: cubic-bezier(0.32, 0.72, 0, 1);   /* interacción, botones, menú */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* entradas cortas */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1); /* revelados largos */
+  --t-press: 160ms; --t-hover: 200ms; --t-ui: 400ms; --t-reveal: 900ms;
+  --stagger: 90ms;
+
+  /* ---------- capas ---------- */
+  --z-nav: 30; --z-menu: 25; --z-skip: 40;
+}

@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es" data-assets="../assets/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IEEE Computer Society ITVer · Capítulo estudiantil de computación</title>
+  <meta name="description" content="IEEE Computer Society ITVer, el capítulo estudiantil de computación del Instituto Tecnológico de Veracruz: talleres, hackatones, conferencias y proyectos abiertos a quien quiera participar.">
+  <meta name="theme-color" content="#002855">
+  <meta property="og:title" content="IEEE Computer Society ITVer">
+  <meta property="og:description" content="Talleres, hackatones y proyectos de computación en el Tec de Veracruz. Lo único que pedimos es participación.">
+  <meta property="og:image" content="../assets/img/campus-itver.webp">
+  <meta property="og:locale" content="es_MX">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- floating island nav -->
+  <header class="nav" data-nav>
+    <a class="nav-logo" href="#inicio" aria-label="IEEE Computer Society ITVer: inicio">
+      <img class="logo-dark" src="../assets/logos/ieee-cs-white.png" width="1040" height="318" alt="IEEE Computer Society">
+      <img class="logo-light" src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="" aria-hidden="true">
+    </a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#areas">Áreas</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="nav-cta" href="#participa">Participa</a>
+    <button class="nav-menu" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="burger" aria-hidden="true"><span></span><span></span></span>
+      <span class="nav-menu-word">Menú</span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#areas">Áreas</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#participa">Participa</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="contenido">
+    <!-- HERO: night over the Gulf -->
+    <section class="hero" id="inicio" data-theme="dark" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <a class="announce" href="https://www.computer.org/press-room/ieee-cs-80th-anniversary" rel="noopener">
+          <span class="announce-tag">1946–2026</span>
+          <span>IEEE Computer Society cumple 80 años</span>
+          <span class="announce-arrow" aria-hidden="true">→</span>
+        </a>
+        <h1 class="hero-title" id="hero-title"><span class="l">IEEE Computer Society</span> <span class="l">ITVer</span></h1>
+        <p class="hero-sub">El capítulo estudiantil de computación del Instituto Tecnológico de Veracruz, fundado en <span data-dato="fundacion">2026</span>: talleres, hackatones, conferencias y proyectos abiertos a quien quiera participar.</p>
+        <div class="hero-actions">
+          <a class="mail-chip social-chip" data-red="instagram" href="#">
+            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="3.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="14.2" cy="5.8" r="0.9" fill="currentColor"/></svg>
+            <span class="mail-text" data-red-usuario>@computersociety.itver</span>
+            <span class="chip-go" aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn-light" href="#participa"><span>Cómo participar</span><span class="btn-icon" aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- live thing: the chapter badge -->
+        <div class="studio" aria-labelledby="studio-title">
+          <h2 class="visually-hidden" id="studio-title">Arma tu gafete del capítulo</h2>
+          <div class="area-tabs" role="radiogroup" aria-label="Elige tu área">
+            <button type="button" role="radio" aria-checked="true" data-area="Desarrollo de software" data-c="#00629b" data-ink="#ffffff">Software</button>
+            <button type="button" role="radio" aria-checked="false" data-area="Inteligencia artificial" data-c="#ffa300" data-ink="#002855" tabindex="-1">IA</button>
+            <button type="button" role="radio" aria-checked="false" data-area="Ciencia de datos" data-c="#00b5e2" data-ink="#002855" tabindex="-1">Datos</button>
+            <button type="button" role="radio" aria-checked="false" data-area="Ciberseguridad" data-c="#ba0c2f" data-ink="#ffffff" tabindex="-1">Seguridad</button>
+            <button type="button" role="radio" aria-checked="false" data-area="Computación en la nube" data-c="#009ca6" data-ink="#002855" tabindex="-1">Nube</button>
+            <button type="button" role="radio" aria-checked="false" data-area="Ingeniería de software" data-c="#00843d" data-ink="#ffffff" tabindex="-1">Ingeniería</button>
+            <button type="button" role="radio" aria-checked="false" data-area="Tecnologías emergentes" data-c="#ffd100" data-ink="#002855" tabindex="-1">Emergentes</button>
+          </div>
+          <div class="studio-shell">
+            <div class="studio-core">
+              <div class="badge-stage">
+                <div class="badge" data-badge style="--c: #00629b; --ink: #ffffff">
+                  <div class="badge-sheen" aria-hidden="true"></div>
+                  <div class="badge-top">
+                    <img src="../assets/logos/ieee-cs-white.png" width="1040" height="318" alt="IEEE Computer Society" class="badge-logo">
+                    <span class="badge-kind">IEEE CS · ITVer</span>
+                  </div>
+                  <svg class="badge-lattice" viewBox="0 0 130 58" aria-hidden="true">
+                    <g fill="currentColor"></g>
+                  </svg>
+                  <p class="badge-name" data-badge-name>Tu nombre</p>
+                  <p class="badge-area" data-badge-area>Desarrollo de software</p>
+                  <p class="badge-foot"><span>Veracruz, Ver.</span><span>2026</span></p>
+                </div>
+              </div>
+              <form class="studio-form" id="badge-form">
+                <label for="badge-input">Tu nombre</label>
+                <input id="badge-input" name="nombre" type="text" maxlength="28" autocomplete="name" placeholder="Escribe tu nombre" aria-describedby="badge-help">
+                <p id="badge-help" class="studio-help">Elige un área arriba. Es una vista previa del gafete del capítulo, no una credencial de IEEE. El botón te lleva a escribirnos.</p>
+                <button class="btn btn-orange" type="submit"><span>Quiero participar</span><span class="btn-icon" aria-hidden="true">→</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- backed by -->
+    <section class="backers" aria-labelledby="backers-title">
+      <h2 class="backers-title" id="backers-title">Con el respaldo de</h2>
+      <ul class="backers-row" data-reveal>
+        <li><img src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="IEEE Computer Society" loading="lazy"><p><strong>IEEE Computer Society</strong>La sociedad de IEEE dedicada a la computación.</p></li>
+        <li><img src="../assets/logos/tecnm.png" width="500" height="500" alt="Tecnológico Nacional de México" loading="lazy" class="sq"><p><strong>TecNM</strong>El sistema al que pertenece el instituto.</p></li>
+        <li><img src="../assets/logos/itv.png" width="232" height="174" alt="Instituto Tecnológico de Veracruz" loading="lazy" class="sq"><p><strong>Instituto Tecnológico de Veracruz</strong>La casa del capítulo.</p></li>
+      </ul>
+    </section>
+
+    <!-- AREAS: the wheel -->
+    <section class="wheel-sec" id="areas" data-theme="dark" aria-labelledby="areas-title">
+      <div class="wheel-track" data-wheel>
+        <div class="wheel-stage">
+          <h2 class="wheel-title" id="areas-title">Siete áreas. Empieza por una.</h2>
+          <div class="wheel-window">
+            <span class="wheel-mark wheel-mark-l" aria-hidden="true"></span>
+            <ol class="wheel-list" data-wheel-list>
+              <li data-desc="Del primer commit al despliegue: web, móvil y escritorio, con control de versiones y revisión de código.">Desarrollo de software</li>
+              <li data-desc="Modelos que aprenden de datos: visión, lenguaje y aprendizaje automático aplicados a problemas reales.">Inteligencia artificial</li>
+              <li data-desc="Limpiar, analizar y visualizar datos para decidir con evidencia, no con intuición.">Ciencia de datos</li>
+              <li data-desc="Cómo se atacan y se defienden los sistemas: redes, criptografía y desarrollo seguro.">Ciberseguridad</li>
+              <li data-desc="Infraestructura bajo demanda: contenedores, servicios administrados y arquitectura que escala.">Computación en la nube</li>
+              <li data-desc="Requisitos, diseño, pruebas y calidad: el oficio de construir software que dura.">Ingeniería de software</li>
+              <li data-desc="Lo que todavía no está en el temario: cómputo cuántico, internet de las cosas y realidad extendida.">Tecnologías emergentes</li>
+            </ol>
+            <span class="wheel-mark wheel-mark-r" aria-hidden="true"></span>
+          </div>
+          <div class="wheel-foot">
+            <p class="wheel-count" aria-hidden="true"><span data-wheel-n>1</span> de 7</p>
+            <p class="wheel-desc" data-wheel-desc aria-live="polite">Del primer commit al despliegue: web, móvil y escritorio, con control de versiones y revisión de código.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES: feature rows with real interface fragments -->
+    <section class="features" id="actividades" aria-labelledby="features-title">
+      <div class="sec-head" data-reveal>
+        <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Actividades</p>
+        <h2 id="features-title">Lo que hacemos en el capítulo.</h2>
+        <p>Cuatro formatos que se repiten cada semestre, cada uno con algo que te llevas al terminar.</p>
+      </div>
+
+      <article class="feature">
+        <div class="feature-shell" data-reveal>
+          <div class="feature-visual">
+            <div class="frag frag-code" data-ui>
+              <div class="frag-bar"><span>taller-git.sh</span><span>bash</span></div>
+<pre><code><span class="c"># Taller: tu primer pull request</span>
+git clone https://github.com/tu-usuario/proyecto.git
+cd proyecto
+git switch -c mejora-readme
+git add README.md
+git commit -m "Corrige pasos de instalación"
+git push -u origin mejora-readme<span class="caret" aria-hidden="true"></span></code></pre>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Talleres</p>
+            <h3>Sales con algo que funciona.</h3>
+            <p>Sesiones con la computadora abierta en las que se aprende una herramienta concreta de principio a fin: Git, Python, bases de datos, despliegue en la nube.</p>
+            <p class="chip" data-provisional>2 a 4 horas · práctica guiada</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature-flip">
+        <div class="feature-shell" data-reveal>
+          <div class="feature-visual">
+            <div class="frag frag-time" data-ui data-provisional>
+              <div class="frag-bar"><span>Reto de 24 horas</span><span>formato</span></div>
+              <ol class="timeline">
+                <li class="is-done"><span class="t">Hora 0</span><span>Se presenta el problema y se forman equipos</span></li>
+                <li class="is-now"><span class="t">Hora 4</span><span>Primera revisión con mentores</span></li>
+                <li><span class="t">Hora 20</span><span>Se congela el código</span></li>
+                <li><span class="t">Hora 24</span><span>Demostración ante el jurado</span></li>
+              </ol>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Hackatones</p>
+            <h3>Un reto real y un plazo corto.</h3>
+            <p>Equipos pequeños construyen un prototipo que funcione y lo presentan ante un jurado. Se gana por lo que se demuestra, no por lo que se promete.</p>
+            <p class="chip" data-provisional>Equipos de 3 a 4 · un fin de semana</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-shell" data-reveal>
+          <div class="feature-visual">
+            <div class="frag frag-problem" data-ui>
+              <div class="frag-bar"><span>Problema de práctica</span><span>1 s · 256 MB</span></div>
+              <div class="problem">
+                <p class="problem-title">Celosías del edificio</p>
+                <p>Una fachada tiene <var>n</var> celosías de <var>r</var> × <var>c</var> huecos. Imprime cuántos huecos hay en total.</p>
+                <div class="io">
+                  <div><p class="io-h">Entrada</p><pre><code>3
+4 12
+4 12
+5 10</code></pre></div>
+                  <div><p class="io-h">Salida</p><pre><code>146</code></pre></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Competencias</p>
+            <h3>Rumbo a IEEEXtreme.</h3>
+            <p>Entrenamos resolución de problemas para concursos como IEEEXtreme, la competencia de programación de 24 horas que IEEE organiza cada año para equipos de miembros estudiantes de todo el mundo.</p>
+            <p class="chip">Problemas de práctica · ranking internacional</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature-flip">
+        <div class="feature-shell" data-reveal>
+          <div class="feature-visual">
+            <div class="frag frag-board" data-ui data-provisional>
+              <div class="frag-bar"><span>Proyecto del semestre</span><span>tablero</span></div>
+              <div class="board">
+                <div class="col"><p class="col-h">Por hacer</p><p class="card">Pruebas del lector de horarios</p><p class="card">Documentar la API</p></div>
+                <div class="col"><p class="col-h">En curso</p><p class="card card-on">Mapa de salones del ITVER</p></div>
+                <div class="col"><p class="col-h">Listo</p><p class="card">Diseño de la base de datos</p><p class="card">Prototipo en Figma</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Proyectos y colaboraciones</p>
+            <h3>Un semestre, un proyecto.</h3>
+            <p>Equipos con revisiones entre pares y una presentación final abierta a la comunidad del Tec, y actividades con otros capítulos IEEE y empresas de la región.</p>
+            <p class="chip" data-provisional>Equipos · un semestre</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROJECTS: data from contenido/proyectos.js -->
+    <section class="projects" id="proyectos" aria-labelledby="projects-title" data-proyectos>
+      <div class="sec-head" data-reveal>
+        <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Proyectos</p>
+        <h2 id="projects-title">Lo que ya hicimos.</h2>
+        <p>Talleres, retos y proyectos del capítulo, del más reciente al más antiguo.</p>
+      </div>
+      <div class="pj-filters" role="toolbar" aria-label="Filtrar proyectos por tipo" hidden data-pj-filtros></div>
+      <ol class="pj-grid" data-proyectos-lista>
+        <template>
+          <li class="pj">
+            <article class="pj-shell">
+              <figure class="pj-media" data-p-media><img data-p-imagen src="" alt="" loading="lazy" decoding="async" width="1200" height="800"></figure>
+              <div class="pj-body">
+                <p class="pj-meta"><span class="pj-type" data-p-tipo></span><time data-p-fecha></time></p>
+                <h3 data-p-titulo></h3>
+                <p class="pj-text" data-p-descripcion></p>
+                <a class="pj-link" data-p-enlace href="#">Ver más <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </li>
+        </template>
+      </ol>
+      <div class="pj-empty" data-proyectos-vacio>
+        <div class="pj-empty-shell">
+          <div class="pj-empty-core">
+            <div class="pj-empty-copy">
+              <h3>El primer semestre está en marcha.</h3>
+              <p>El capítulo nació en <span data-dato="fundacion">2026</span>. Aquí aparecerán los talleres, retos y proyectos conforme los vayamos realizando.</p>
+              <a class="btn btn-navy" data-red="instagram" href="#"><span>Síguenos para verlos primero</span><span class="btn-icon" aria-hidden="true">↗</span></a>
+            </div>
+            <ol class="pj-line" aria-label="Línea de tiempo del capítulo">
+              <li class="is-done"><span class="pj-line-year" data-dato="fundacion">2026</span><span>Nace IEEE Computer Society ITVer</span></li>
+              <li class="is-next"><span class="pj-line-year">Próximo</span><span>Primer taller del capítulo</span></li>
+              <li class="is-next"><span class="pj-line-year">Después</span><span>Tu proyecto, aquí</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO TAKE PART: pinned stepper -->
+    <section class="join" id="participa" aria-labelledby="join-title">
+      <div class="join-track" data-stepper>
+        <div class="join-stage">
+          <div class="join-left">
+            <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Cómo participar</p>
+            <h2 id="join-title">Solo pedimos participar.</h2>
+            <ol class="steps" data-steps>
+              <li class="is-active"><button type="button"><span class="step-name">Síguenos</span><span class="step-text">En <a data-red="instagram" href="#">Instagram</a> y <a data-red="facebook" href="#">Facebook</a> publicamos cada actividad con fecha y lugar.</span></button></li>
+              <li><button type="button"><span class="step-name">Ven a una actividad</span><span class="step-text">Talleres, charlas y retos abiertos a todo el Tec. No necesitas experiencia previa.</span></button></li>
+              <li><button type="button"><span class="step-name">Entra a un equipo</span><span class="step-text">Elige un área y súmate a un proyecto del semestre.</span></button></li>
+              <li><button type="button"><span class="step-name">Afíliate a IEEE, si quieres</span><span class="step-text">Es opcional. La <a href="https://www.ieee.org/membership/join/index.html" rel="noopener">membresía estudiantil</a> suma la red internacional y <a href="https://www.computer.org/membership" rel="noopener">Computer Society</a>.</span></button></li>
+            </ol>
+          </div>
+          <div class="join-right">
+            <div class="check-shell">
+              <div class="check-core" data-ui>
+                <div class="check-head"><span>Tu lista para participar</span><span class="check-count"><span data-check-n>1</span> de 4</span></div>
+                <div class="check-bar" aria-hidden="true"><span data-check-bar></span></div>
+                <ul class="check-list" data-check-list>
+                  <li class="is-done"><span class="box" aria-hidden="true"></span>Sigues al capítulo</li>
+                  <li><span class="box" aria-hidden="true"></span>Primera actividad</li>
+                  <li><span class="box" aria-hidden="true"></span>Equipo del semestre</li>
+                  <li><span class="box" aria-hidden="true"></span>Membresía IEEE (opcional)</li>
+                </ul>
+                <p class="check-note" data-check-note>Listo: te enteras de cada actividad en cuanto la publicamos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS: tabbed block -->
+    <section class="events" id="eventos" aria-labelledby="events-title">
+      <div class="sec-head">
+        <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Eventos</p>
+        <h2 id="events-title">Lo que viene este semestre.</h2>
+        <p>Calendario por publicar. Estos son ejemplos del formato de cada actividad.</p>
+      </div>
+      <div class="tabs-shell">
+        <div class="tabs-core">
+          <div class="tabs" role="tablist" aria-label="Tipo de evento">
+            <button role="tab" id="tab-t" aria-selected="true" aria-controls="panel-t">Talleres</button>
+            <button role="tab" id="tab-c" aria-selected="false" aria-controls="panel-c" tabindex="-1">Conferencias</button>
+            <button role="tab" id="tab-k" aria-selected="false" aria-controls="panel-k" tabindex="-1">Competencias</button>
+          </div>
+          <ul class="ev-list" id="panel-t" role="tabpanel" aria-labelledby="tab-t" data-provisional>
+            <li><span class="ev-name">Git y GitHub para proyectos en equipo</span><span class="ev-where">Laboratorio de cómputo</span><span class="ev-when">Por confirmar</span></li>
+            <li><span class="ev-name">Python para análisis de datos</span><span class="ev-where">Laboratorio de cómputo</span><span class="ev-when">Por confirmar</span></li>
+            <li><span class="ev-name">Tu primera app en la nube</span><span class="ev-where">En línea</span><span class="ev-when">Por confirmar</span></li>
+          </ul>
+          <ul class="ev-list" id="panel-c" role="tabpanel" aria-labelledby="tab-c" hidden data-provisional>
+            <li><span class="ev-name">Cómo se protege una red universitaria</span><span class="ev-where">Auditorio</span><span class="ev-when">Por confirmar</span></li>
+            <li><span class="ev-name">De estudiante a ingeniero de software</span><span class="ev-where">En línea</span><span class="ev-when">Por confirmar</span></li>
+          </ul>
+          <ul class="ev-list" id="panel-k" role="tabpanel" aria-labelledby="tab-k" hidden data-provisional>
+            <li><span class="ev-name">Entrenamiento para IEEEXtreme</span><span class="ev-where">En línea</span><span class="ev-when">Por confirmar</span></li>
+            <li><span class="ev-name">Reto de 24 horas del capítulo</span><span class="ev-where">Campus ITVER</span><span class="ev-when">Por confirmar</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY: dark card -->
+    <section class="community" id="comunidad" aria-labelledby="community-title">
+      <div class="community-card" data-theme="dark">
+        <div class="community-copy">
+          <p class="tag tag-dark"><span class="tag-dot" aria-hidden="true"></span>Comunidad</p>
+          <h2 id="community-title">Gente con quien construir.</h2>
+          <p>El capítulo existe para que aprender computación no dependa solo del aula. Encuentras networking con estudiantes, egresados y profesionales; colaboración en equipos que construyen cosas reales, y crecimiento profesional y académico con experiencia de liderazgo.</p>
+          <ul class="perks">
+            <li><strong>Networking</strong><span>Estudiantes de otros semestres, egresados y la red de IEEE.</span></li>
+            <li><strong>Colaboración</strong><span>Equipos mixtos, revisiones entre pares, proyectos con entrega.</span></li>
+            <li><strong>Crecimiento</strong><span>Liderazgo en la mesa directiva y competencias internacionales.</span></li>
+          </ul>
+          <div class="board-roles">
+            <p class="roles-h">Mesa directiva</p>
+            <ul data-mesa>
+              <template><li><span data-rol></span><span data-nombre></span></li></template>
+              <li><span>Presidente</span><span>Chucho Lara</span></li>
+              <li class="is-pendiente"><span>Vicepresidente</span><span data-provisional>Pendiente</span></li>
+              <li><span>Secretaría</span><span>Sarahí</span></li>
+              <li><span>Tesorero</span><span>Marco Parra</span></li>
+            </ul>
+          </div>
+        </div>
+        <figure class="community-photos">
+          <img src="../assets/img/campus-itver.webp" width="1024" height="768" loading="lazy" decoding="async" alt="Explanada del Instituto Tecnológico de Veracruz con palmeras y el edificio azul y blanco">
+          <img src="../assets/img/eniac-1946.webp" width="1800" height="1236" loading="lazy" decoding="async" alt="Dos programadoras frente a los paneles de la ENIAC en 1946">
+          <figcaption>El campus del ITVER hoy y la ENIAC en 1946, el año en que comenzó IEEE Computer Society.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="preguntas" aria-labelledby="faq-title">
+      <div class="sec-head">
+        <p class="tag"><span class="tag-dot" aria-hidden="true"></span>Preguntas</p>
+        <h2 id="faq-title">Preguntas frecuentes.</h2>
+      </div>
+      <div class="faq-list">
+        <details open><summary>¿Necesito experiencia previa?</summary><p data-provisional>No. Los talleres empiezan desde cero y los equipos mezclan semestres para que aprendas con quien ya sabe.</p></details>
+        <details><summary>¿Tengo que estudiar Sistemas Computacionales?</summary><p data-provisional>No. El capítulo está abierto a estudiantes del ITVER de cualquier carrera con interés en la computación.</p></details>
+        <details><summary>¿Necesito ser miembro de IEEE para participar?</summary><p>No. Lo único que pedimos es participación. La membresía estudiantil de IEEE es opcional y suma la red internacional.</p></details>
+        <details><summary>¿Cuánto cuesta?</summary><p>Para el capítulo solo pedimos que participes. Si además quieres la membresía de IEEE y de Computer Society, sus cuotas se consultan en <a href="https://www.ieee.org/membership/join/index.html" rel="noopener">ieee.org</a>.</p></details>
+        <details><summary>¿Qué es IEEEXtreme?</summary><p>Una competencia de programación de 24 horas que IEEE organiza cada año para equipos de miembros estudiantes de todo el mundo.</p></details>
+        <details><summary>¿Cómo me entero de los eventos?</summary><p>En esta página y en el <a data-red="instagram" href="#">Instagram</a> y el <a data-red="facebook" href="#">Facebook</a> del capítulo, donde publicamos cada actividad.</p></details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final" data-theme="dark" aria-labelledby="final-title">
+      <h2 id="final-title">Participa este semestre.</h2>
+      <p>Síguenos para enterarte de cada actividad y escríbenos por mensaje directo si quieres entrar a un equipo.</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" data-red="instagram" href="#"><span>Instagram</span><span class="btn-icon" aria-hidden="true">↗</span></a>
+        <a class="btn btn-light" data-red="facebook" href="#"><span>Facebook</span><span class="btn-icon" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="IEEE Computer Society" loading="lazy">
+        <p><span data-dato="nombre">IEEE Computer Society ITVer</span> · Instituto Tecnológico de Veracruz · Tecnológico Nacional de México</p>
+      </div>
+      <div><p class="foot-h">Capítulo</p><ul><li><a href="#areas">Áreas</a></li><li><a href="#actividades">Actividades</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#proyectos">Proyectos</a></li><li><a href="#participa">Participa</a></li></ul></div>
+      <div><p class="foot-h">IEEE</p><ul><li><a href="https://www.computer.org" rel="noopener">computer.org</a></li><li><a href="https://www.ieee.org" rel="noopener">ieee.org</a></li><li><a href="https://www.instagram.com/ieee_computer_society/" rel="noopener">@ieee_computer_society</a></li></ul></div>
+      <div><p class="foot-h">Capítulo en redes</p><ul><li><a data-red="instagram" href="#">Instagram</a></li><li><a data-red="facebook" href="#">Facebook</a></li><li><a data-correo data-correo-ocultar href="#"><span data-correo-texto>Correo</span></a></li></ul></div>
+    </div>
+    <p class="foot-legal">Imágenes: <a href="https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_(full_resolution).jpg" rel="noopener">“Two women operating ENIAC”</a>, Ejército de EE. UU., dominio público, vía Wikimedia Commons. Campus: archivo del capítulo. © 2026 IEEE Computer Society ITVer. IEEE y IEEE Computer Society son marcas de IEEE.</p>
+  </footer>
+
+  <script src="../../contenido/capitulo.js"></script>
+  <script src="../../contenido/proyectos.js"></script>
+  <script src="../../contenido/aplicar.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

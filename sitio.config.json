@@ -1,0 +1,5 @@
+{
+  "landing": "d-moderna",
+  "opciones": ["a-unos-y-ceros", "b-paleta-del-campus", "c-actas", "d-moderna"],
+  "nota": "Cambia 'landing' por cualquiera de 'opciones' y ejecuta: npm run construir"
+}
