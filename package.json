@@ -5,7 +5,8 @@
   "description": "Sitio de IEEE Computer Society ITVer",
   "type": "module",
   "scripts": {
-    "construir": "node scripts/construir.mjs",
+    "sincronizar": "node scripts/sincronizar.mjs",
+    "construir": "node scripts/sincronizar.mjs && node scripts/construir.mjs",
     "vista-previa": "node scripts/vista-previa.mjs"
   },
   "engines": { "node": ">=18" }

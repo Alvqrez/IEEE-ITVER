@@ -16,7 +16,7 @@ window.ITVER_PROYECTOS = [
   //   titulo: 'Taller de Git y GitHub',
   //   fecha: '2026-11-20',
   //   tipo: 'Taller',
-  //   descripcion: '32 estudiantes hicieron su primer pull request en un repositorio del capítulo.',
+  //   descripcion: 'Estudiantes de tres carreras hicieron su primer pull request en un repositorio del capítulo.',
   //   imagen: 'proyectos/taller-git.webp',
   //   enlace: 'https://www.instagram.com/computersociety.itver/',
   // },

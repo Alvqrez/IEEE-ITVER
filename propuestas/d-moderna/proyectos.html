@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es" data-assets="../assets/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos · IEEE Computer Society ITVer</title>
+  <meta name="description" content="Talleres, retos y proyectos realizados por IEEE Computer Society ITVer, el capítulo estudiantil de computación del Instituto Tecnológico de Veracruz.">
+  <meta name="theme-color" content="#002855">
+  <meta property="og:title" content="Proyectos · IEEE Computer Society ITVer">
+  <meta property="og:description" content="Lo que el capítulo de computación del Tec de Veracruz ya hizo.">
+  <meta property="og:image" content="../assets/img/campus-itver.webp">
+  <meta property="og:locale" content="es_MX">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="secciones.css">
+</head>
+<body>
+<!-- comun:cabecera -->
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- floating island nav -->
+  <header class="nav" data-nav>
+    <a class="nav-logo" href="index.html" aria-label="IEEE Computer Society ITVer: inicio">
+      <img class="logo-dark" src="../assets/logos/ieee-cs-white.png" width="1040" height="318" alt="IEEE Computer Society">
+      <img class="logo-light" src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="" aria-hidden="true">
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="proyectos.html" aria-current="page">Proyectos</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="galeria.html">Galería</a>
+    </nav>
+    <a class="nav-cta" href="unete.html">Únete</a>
+    <button class="nav-menu" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="burger" aria-hidden="true"><span></span><span></span></span>
+      <span class="nav-menu-word">Menú</span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="unete.html">Únete</a></li>
+      </ul>
+    </nav>
+    <p class="menu-redes"><a data-red="instagram" href="#">Instagram</a><a data-red="facebook" href="#">Facebook</a></p>
+  </div>
+<!-- /comun:cabecera -->
+
+  <main id="contenido">
+    <section class="phero" data-theme="dark" aria-labelledby="ph-title">
+      <div class="phero-inner">
+        <div class="phero-copy">
+          <nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Proyectos</span></nav>
+          <h1 id="ph-title">Proyectos del capítulo.</h1>
+          <p class="phero-sub">Talleres, retos y proyectos realizados, del más reciente al más antiguo. Cada uno con lo que se logró.</p>
+        </div>
+        <nav class="phero-index" aria-label="En esta página">
+          <div class="phero-index-core">
+            <p class="phero-index-h">En esta página</p>
+            <ol>
+              <li><a href="#realizados"><span>01</span>Realizados</a></li>
+              <li><a href="#propon"><span>02</span>Propón un proyecto</a></li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="projects projects-page" id="realizados" aria-labelledby="projects-title" data-coleccion="proyectos">
+      <div class="list-head">
+        <h2 id="projects-title">Realizados</h2>
+        <div class="pj-filters" role="toolbar" aria-label="Filtrar proyectos por tipo" hidden data-filtros></div>
+      </div>
+      <ol class="pj-grid" data-lista>
+        <template>
+          <li class="pj">
+            <article class="pj-shell">
+              <figure class="pj-media" data-media><img data-imagen="imagen" src="" alt="" loading="lazy" decoding="async" width="1200" height="800"></figure>
+              <div class="pj-body">
+                <p class="pj-meta"><span class="pj-type" data-campo="tipo"></span><span class="ejemplo" data-si-ejemplo>Ejemplo</span><time data-fecha="fecha"></time></p>
+                <h3 data-campo="titulo"></h3>
+                <p class="pj-text" data-campo="descripcion"></p>
+                <a class="pj-link" data-enlace="enlace" href="#">Ver más <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </li>
+        </template>
+      </ol>
+      <div class="pj-empty" data-vacio>
+        <div class="pj-empty-shell">
+          <div class="pj-empty-core">
+            <div class="pj-empty-copy">
+              <h3>El primer semestre está en marcha.</h3>
+              <p>El capítulo nació en <span data-dato="fundacion">2026</span>. Aquí aparecerán los talleres, retos y proyectos conforme los vayamos realizando.</p>
+              <a class="btn btn-navy" data-red="instagram" href="#"><span>Síguenos para verlos primero</span><span class="btn-icon" aria-hidden="true">↗</span></a>
+            </div>
+            <ol class="pj-line" aria-label="Línea de tiempo del capítulo">
+              <li class="is-done"><span class="pj-line-year" data-dato="fundacion">2026</span><span>Nace IEEE Computer Society ITVer</span></li>
+              <li class="is-next"><span class="pj-line-year">Próximo</span><span>Primer taller del capítulo</span></li>
+              <li class="is-next"><span class="pj-line-year">Después</span><span>Tu proyecto, aquí</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="propose" id="propon" aria-labelledby="propose-title">
+      <div class="propose-shell" data-reveal>
+        <div class="propose-core">
+          <div class="propose-copy">
+            <h2 id="propose-title">¿Tienes una idea de proyecto?</h2>
+            <p>Cuéntanos qué quieres construir y en qué área. Te ayudamos a armar el equipo y a presentarlo al final del semestre.</p>
+          </div>
+          <a class="btn btn-orange" href="unete.html#mensaje"><span>Propón tu proyecto</span><span class="btn-icon" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+<!-- comun:pie -->
+    <!-- SOCIAL: the chapter's channels, on every page -->
+    <section class="redes" data-theme="dark" aria-labelledby="redes-title">
+      <div class="redes-inner">
+        <div class="redes-copy">
+          <p class="tag tag-dark"><span class="tag-dot" aria-hidden="true"></span>Redes del capítulo</p>
+          <h2 id="redes-title">Entérate primero.</h2>
+          <p>Cada evento se anuncia en nuestras redes con fecha, lugar y registro. Escríbenos por mensaje directo si quieres entrar a un equipo.</p>
+        </div>
+        <ul class="redes-cards">
+          <li>
+            <a class="red-card" data-red="instagram" href="#">
+              <span class="red-icon" aria-hidden="true"><svg viewBox="0 0 20 20" width="22" height="22"><rect x="3" y="3" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="3.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="14.2" cy="5.8" r="0.9" fill="currentColor"/></svg></span>
+              <span class="red-name">Instagram</span>
+              <span class="red-user" data-red-usuario>@computersociety.itver</span>
+              <span class="red-what">Avisos, historias y fotos de cada actividad.</span>
+              <span class="red-go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="red-card" data-red="facebook" href="#">
+              <span class="red-icon" aria-hidden="true"><svg viewBox="0 0 20 20" width="22" height="22"><path d="M11.2 17v-6.2h2.1l.4-2.5h-2.5V6.9c0-.7.3-1.3 1.4-1.3h1.2V3.4c-.4-.1-1.2-.2-2-.2-2 0-3.2 1.2-3.2 3.3v1.8H6.4v2.5h2.2V17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+              <span class="red-name">Facebook</span>
+              <span class="red-user" data-red-usuario>IEEE Computer Society ITVer</span>
+              <span class="red-what">Eventos y álbumes de fotos.</span>
+              <span class="red-go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="IEEE Computer Society" loading="lazy">
+        <p><span data-dato="nombre">IEEE Computer Society ITVer</span> · Instituto Tecnológico de Veracruz · Tecnológico Nacional de México</p>
+      </div>
+      <div><p class="foot-h">Capítulo</p><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="unete.html">Únete</a></li><li><a href="unete.html#preguntas">Preguntas</a></li></ul></div>
+      <div><p class="foot-h">Actividad</p><ul><li><a href="eventos.html">Eventos</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="proyectos.html" aria-current="page">Proyectos</a></li><li><a href="galeria.html">Galería</a></li></ul></div>
+      <div><p class="foot-h">IEEE</p><ul><li><a href="https://www.computer.org" rel="noopener">computer.org</a></li><li><a href="https://www.ieee.org" rel="noopener">ieee.org</a></li><li><a href="https://www.instagram.com/ieee_computer_society/" rel="noopener">@ieee_computer_society</a></li><li><a data-correo data-correo-ocultar href="#"><span data-correo-texto>Correo</span></a></li></ul></div>
+    </div>
+    <p class="foot-legal">Imágenes: <a href="https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_(full_resolution).jpg" rel="noopener">“Two women operating ENIAC”</a>, Ejército de EE. UU., dominio público, vía Wikimedia Commons. Campus: archivo del capítulo. © 2026 IEEE Computer Society ITVer. IEEE y IEEE Computer Society son marcas de IEEE.</p>
+  </footer>
+
+  <script src="../../contenido/capitulo.js"></script>
+  <script src="../../contenido/eventos.js"></script>
+  <script src="../../contenido/noticias.js"></script>
+  <script src="../../contenido/proyectos.js"></script>
+  <script src="../../contenido/galeria.js"></script>
+  <script src="../../contenido/aplicar.js"></script>
+  <script src="main.js" defer></script>
+<!-- /comun:pie -->
+</body>
+</html>

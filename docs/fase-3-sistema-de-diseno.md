@@ -100,9 +100,12 @@ Titulares de dos líneas como máximo en todos los anchos. Mayúsculas solo en s
 
 ## 9. Arquitectura del sitio
 
-- `sitio.config.json` → `"landing"` elige qué propuesta es la página de inicio. `npm run construir` genera `dist/` y `npm run vista-previa` lo sirve en `localhost:4321`.
-- `contenido/capitulo.js` reúne nombre, año, correo, redes y mesa directiva; las cuatro landings lo leen. `contenido/proyectos.js` guarda los proyectos (por ahora solo los muestra D).
-- `paginas/` alojará el inicio de sesión y otras páginas, que se publican junto a la landing.
+- `sitio.config.json` → `"landing"` elige qué propuesta es el sitio publicado. `npm run construir` sincroniza cabecera y pie y genera `dist/`; `npm run vista-previa` lo sirve en `localhost:4321`.
+- **A y D son multipágina** (inicio, quiénes somos, eventos, noticias, únete, proyectos, equipo, galería). B y C siguen siendo de una página: si se eligen, el sitio publicado solo tiene inicio.
+- La cabecera y el pie de cada propuesta se editan **solo en su `index.html`** (bloques `<!-- comun:… -->`); `npm run sincronizar` los copia a las demás páginas y marca la página actual.
+- Datos en `contenido/`: `capitulo.js` (nombre, redes, mesa, asesoría, coordinaciones, integrantes, misión, visión, objetivos y valores en borrador), `eventos.js`, `noticias.js`, `proyectos.js` y `galeria.js`. `aplicar.js` los pinta y da vida a filtros, calendario (.ics y Google Calendar), compartir, visor de fotos y el formulario "Escríbenos".
+- Revisión de diseño: abrir cualquier página con `?ejemplos` carga `contenido/ejemplos.js` (contenido falso etiquetado "Ejemplo"); ese archivo no se publica.
+- `paginas/` queda para páginas adicionales comunes (p. ej. inicio de sesión, aún sin confirmar).
 - Si se cambia a A, B o C como página de inicio, las páginas nuevas seguirán usando este sistema. Recomiendo mantenerlo, porque es el más preparado para una aplicación (formularios, estados, tarjetas).
 
 ## 10. Para aprobar

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IEEE CS ITVER · Unos y ceros junto al mar</title>
+  <title>IEEE Computer Society ITVer · Unos y ceros junto al mar</title>
   <meta name="description" content="Capítulo estudiantil de IEEE Computer Society en el Instituto Tecnológico de Veracruz: talleres, conferencias, hackatones, competencias y proyectos de computación.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="IEEE Computer Society · Capítulo ITVER">
@@ -15,21 +15,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="secciones.css">
 </head>
 <body>
+<!-- comun:cabecera -->
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
   <header class="top">
-    <a class="top-logo" href="#inicio" aria-label="IEEE Computer Society, capítulo ITVER: inicio">
+    <a class="top-logo" href="index.html" aria-current="page" aria-label="IEEE Computer Society ITVer: inicio">
       <img src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="IEEE Computer Society">
     </a>
-    <nav class="top-links" aria-label="Secciones">
-      <a href="#areas">Áreas</a>
-      <a href="#actividades">Actividades</a>
-      <a href="#eventos">Eventos</a>
-      <a href="#comunidad">Comunidad</a>
+    <nav class="top-links" aria-label="Principal">
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="galeria.html">Galería</a>
     </nav>
-    <a class="top-action" href="#unete">Únete al capítulo</a>
+    <a class="top-action" href="unete.html">Únete al capítulo</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
       <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
       <span class="menu-word">Menú</span>
@@ -39,14 +43,19 @@
   <div class="menu" id="menu" hidden>
     <nav aria-label="Menú principal">
       <ul>
-        <li><a href="#areas">Áreas</a></li>
-        <li><a href="#actividades">Actividades</a></li>
-        <li><a href="#eventos">Eventos</a></li>
-        <li><a href="#comunidad">Comunidad</a></li>
-        <li><a href="#unete">Únete al capítulo</a></li>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="unete.html">Únete al capítulo</a></li>
       </ul>
     </nav>
+    <p class="menu-redes"><a data-red="instagram" href="#">Instagram</a><a data-red="facebook" href="#">Facebook</a></p>
   </div>
+<!-- /comun:cabecera -->
 
   <main id="contenido">
     <!-- HERO: type only -->
@@ -57,7 +66,7 @@
       </h1>
       <div class="hero-foot">
         <p class="hero-sub">El capítulo estudiantil de IEEE Computer Society en el Instituto Tecnológico de Veracruz: talleres, hackatones y proyectos para quienes estudian computación.</p>
-        <a class="btn" href="#unete">
+        <a class="btn" href="unete.html">
           <span>Únete al capítulo</span>
           <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
@@ -78,7 +87,10 @@
             <img src="../assets/logos/itv.png" width="232" height="174" alt="Instituto Tecnológico de Veracruz" loading="lazy">
           </div>
         </div>
-        <p data-reveal><strong>Cómo encontrarnos.</strong> <span data-provisional>Escríbenos al correo del capítulo o búscanos en redes sociales. Publicamos cada actividad con fecha, lugar y cupo, y respondemos dudas sobre cómo afiliarte a IEEE.</span></p>
+        <div data-reveal>
+          <p><strong>Cómo encontrarnos.</strong> Búscanos en Instagram y Facebook: publicamos cada actividad con fecha, lugar y registro, y respondemos dudas sobre cómo afiliarte a IEEE.</p>
+          <p class="intro-more"><a href="quienes-somos.html">Misión, visión y objetivos <span aria-hidden="true">→</span></a></p>
+        </div>
       </div>
     </section>
 
@@ -123,6 +135,9 @@
           </button>
           <button class="act" role="tab" aria-selected="false" aria-controls="act-panel" id="tab-conferencias" data-act="1" tabindex="-1" data-take="contactos y una idea más clara de hacia dónde ir.">
             <span class="act-name">Conferencias</span><span class="act-meta">Industria y academia</span><span class="act-desc">Charlas de profesionales, investigadores y egresados sobre cómo se trabaja hoy en computación, con tiempo para preguntas. Algunas son presenciales en el campus y otras en línea con ponentes de otros capítulos IEEE.</span>
+          </button>
+          <button class="act" role="tab" aria-selected="false" aria-controls="act-panel" id="tab-visitas" data-act="2" tabindex="-1" data-take="la computación vista fuera del aula.">
+            <span class="act-name">Visitas</span><span class="act-meta" data-provisional>Empresas de la región · medio día</span><span class="act-desc">Visitas industriales: recorridos por empresas y centros de tecnología de la región para ver cómo se diseña, se opera y se protege la tecnología que usamos todos los días.</span>
           </button>
           <button class="act" role="tab" aria-selected="false" aria-controls="act-panel" id="tab-hackatones" data-act="2" tabindex="-1" data-take="un prototipo y la experiencia de entregarlo a tiempo.">
             <span class="act-name">Hackatones</span><span class="act-meta" data-provisional>Equipos · un reto · un fin de semana</span><span class="act-desc">Equipos pequeños, un problema real y un plazo corto para construir un prototipo que funcione. Se presenta ante un jurado y se gana por lo que se demuestra, no por lo que se promete.</span>
@@ -184,25 +199,44 @@
       </form>
     </section>
 
-    <!-- EVENTS: line-up at one size -->
+    <!-- EVENTS: line-up from contenido/eventos.js -->
     <section class="events" id="eventos" aria-labelledby="events-title">
-      <div class="wrap">
+      <div class="wrap" data-coleccion="eventos" data-filtro="proximos" data-limite="4">
         <h2 class="events-title" id="events-title" data-reveal>Próximos eventos</h2>
-        <p class="events-part" data-reveal>Calendario por publicar · ejemplos de formato</p>
-        <table class="lineup">
-          <caption class="visually-hidden">Ejemplos de eventos del capítulo</caption>
-          <thead class="visually-hidden"><tr><th scope="col">Actividad</th><th scope="col">Formato</th><th scope="col">Lugar</th><th scope="col">Fecha</th></tr></thead>
-          <tbody data-provisional>
-            <tr data-reveal><td>Git y GitHub para proyectos en equipo</td><td>Taller</td><td>Laboratorio de cómputo</td><td>Por confirmar</td></tr>
-            <tr data-reveal><td>Cómo se protege una red universitaria</td><td>Conferencia</td><td>Auditorio</td><td>Por confirmar</td></tr>
-            <tr data-reveal><td>Reto de 24 horas del capítulo</td><td>Hackatón</td><td>Campus ITVER</td><td>Por confirmar</td></tr>
-            <tr data-reveal><td>Entrenamiento para IEEEXtreme</td><td>Competencia</td><td>En línea</td><td>Por confirmar</td></tr>
-            <tr data-reveal><td>Python para análisis de datos</td><td>Taller</td><td>Laboratorio de cómputo</td><td>Por confirmar</td></tr>
-            <tr data-reveal><td>Presentación de proyectos del semestre</td><td>Proyectos</td><td>Explanada</td><td>Por confirmar</td></tr>
-          </tbody>
-        </table>
-        <p class="events-note">Estos títulos son ejemplos de formato. Publicaremos el calendario real con fechas, lugar y registro.</p>
+        <ol class="lu-list" data-lista>
+          <template>
+            <li class="lu">
+              <p class="lu-date"><time data-fecha="inicio"></time><span data-hora></span></p>
+              <h3 class="lu-name"><span data-campo="titulo"></span><span class="ejemplo" data-si-ejemplo>Ejemplo</span></h3>
+              <p class="lu-type" data-campo="tipo"></p>
+              <p class="lu-where" data-campo="lugar"></p>
+              <p class="lu-actions"><a data-enlace="registro" href="#">Regístrate ↗</a><a data-pub="instagram" href="#">Instagram ↗</a><a data-pub="facebook" href="#">Facebook ↗</a><button type="button" data-accion="google">Google Calendar</button><button type="button" data-accion="calendario">Archivo .ics</button><button type="button" data-accion="compartir">Compartir</button></p>
+            </li>
+          </template>
+        </ol>
+        <div class="lu-empty" data-vacio>
+          <p class="lu-empty-big">Calendario por publicar.</p>
+          <p class="lu-empty-text">Las fechas de talleres, conferencias, visitas industriales y competencias salen primero en <a data-red="instagram" href="#">Instagram</a> y <a data-red="facebook" href="#">Facebook</a>.</p>
+        </div>
+        <p class="events-more"><a href="eventos.html">Todos los eventos y formatos <span aria-hidden="true">→</span></a></p>
       </div>
+    </section>
+
+    <!-- NEWS + PROJECTS previews: only when there is something to show -->
+    <section class="prev wrap" aria-labelledby="newsp-title" data-coleccion="noticias" data-limite="3" data-ocultar-si-vacio hidden>
+      <h2 class="prev-title" id="newsp-title">Noticias</h2>
+      <ol class="nl-list" data-lista>
+        <template><li class="nl"><time data-fecha="fecha"></time><h3 class="nl-title"><span data-campo="titulo"></span><span class="ejemplo" data-si-ejemplo>Ejemplo</span></h3><p class="nl-text" data-campo="resumen"></p></li></template>
+      </ol>
+      <p class="prev-more"><a href="noticias.html">Todas las noticias <span aria-hidden="true">→</span></a></p>
+    </section>
+
+    <section class="prev wrap" aria-labelledby="pjp-title" data-coleccion="proyectos" data-limite="3" data-ocultar-si-vacio hidden>
+      <h2 class="prev-title" id="pjp-title">Proyectos</h2>
+      <ol class="nl-list" data-lista>
+        <template><li class="nl"><time data-fecha="fecha"></time><h3 class="nl-title"><span data-campo="titulo"></span><span class="ejemplo" data-si-ejemplo>Ejemplo</span></h3><p class="nl-text" data-campo="descripcion"></p></li></template>
+      </ol>
+      <p class="prev-more"><a href="proyectos.html">Todos los proyectos <span aria-hidden="true">→</span></a></p>
     </section>
 
     <!-- PICTURES: the craft, then -->
@@ -222,13 +256,14 @@
       <h2 id="community-title" data-reveal>Comunidad</h2>
       <p class="community-text">
         <span class="ink">El capítulo IEEE Computer Society</span> del <mark class="hl hl-orange">Instituto Tecnológico de Veracruz</mark> existe para que aprender computación no dependa solo del aula. Aquí encuentras <mark class="hl hl-cyan">networking</mark> con estudiantes de otros semestres, egresados y profesionales; <mark class="hl hl-yellow">colaboración</mark> en equipos que construyen cosas reales, y <mark class="hl hl-orange">crecimiento profesional y académico</mark> con talleres y experiencia de liderazgo en la mesa directiva. Ser parte de IEEE te conecta con una red internacional que, desde <mark class="hl hl-cyan">1946</mark>, reúne a quienes hacen avanzar la computación, con acceso a conferencias, publicaciones y competencias como <mark class="hl hl-yellow">IEEEXtreme</mark>. No necesitas experiencia previa: necesitas curiosidad y ganas de terminar lo que empiezas.
-        <a class="hl hl-blue community-link" href="#unete">Escríbenos y empieza este semestre.</a>
+        <a class="hl hl-blue community-link" href="unete.html">Únete y empieza este semestre.</a>
       </p>
       <div class="board">
         <h3>Mesa directiva</h3>
         <ul class="board-list" data-mesa>
           <template><li><span data-rol></span><span data-nombre></span></li></template>
         </ul>
+        <p class="board-more"><a href="equipo.html">Organigrama e integrantes <span aria-hidden="true">→</span></a></p>
       </div>
     </section>
 
@@ -241,6 +276,7 @@
           <div class="join-links">
             <a href="https://www.ieee.org/membership/join/index.html" rel="noopener">Membresía estudiantil IEEE</a>
             <a href="https://www.computer.org/membership" rel="noopener">Membresía IEEE Computer Society</a>
+            <a href="unete.html">Cómo unirte, paso a paso <span aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="slip" data-provisional>
@@ -258,11 +294,12 @@
       </div>
     </section>
 
-    <!-- CONTACT: the email as display type -->
+<!-- comun:pie -->
+    <!-- SOCIAL + CONTACT: the handle as display type, on every page -->
     <section class="contact" id="contacto" aria-labelledby="contact-title">
       <div class="contact-top">
         <div class="contact-say">
-          <h2 class="contact-title" id="contact-title">Escríbenos para unirte, proponer un taller o colaborar con el capítulo.</h2>
+          <h2 class="contact-title" id="contact-title">Síguenos en redes y escríbenos para unirte, proponer un taller o colaborar.</h2>
           <p class="contact-place">Instituto Tecnológico de Veracruz · Veracruz, Ver., México</p>
         </div>
         <ul class="contact-links">
@@ -285,15 +322,18 @@
       <ul class="foot-places">
         <li><a href="https://www.computer.org" rel="noopener">computer.org</a></li>
         <li><a href="https://www.ieee.org" rel="noopener">ieee.org</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="unete.html">Únete</a></li>
       </ul>
       <div class="foot-cols">
         <ul>
-          <li><a href="#areas">Áreas</a></li>
-          <li><a href="#actividades">Actividades</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#comunidad">Comunidad</a></li>
-          <li><a href="#unete">Únete al capítulo</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a data-red="instagram" href="#">Instagram</a></li>
+          <li><a data-red="facebook" href="#">Facebook</a></li>
         </ul>
         <div class="foot-brand">
           <img src="../assets/logos/ieee-cs-white.png" width="1040" height="318" alt="IEEE Computer Society" loading="lazy">
@@ -303,12 +343,17 @@
     </div>
     <div class="foot-legal wrap">
       <p class="credits">Imágenes: <a href="https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_(full_resolution).jpg" rel="noopener">“Two women operating ENIAC”</a> y <a href="https://commons.wikimedia.org/wiki/File:Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg" rel="noopener">“Glen Beck and Betty Snyder program the ENIAC”</a>, Ejército de EE. UU., dominio público; <a href="https://commons.wikimedia.org/wiki/File:ENIAC_Function_Table_B_midsection_close-up.jpg" rel="noopener">“ENIAC Function Table B midsection close-up”</a>, Logg Tandy, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>; todas vía Wikimedia Commons. Fotografía del campus: archivo del capítulo.</p>
-      <p>© 2026 IEEE Computer Society ITVer. IEEE y IEEE Computer Society son marcas de IEEE. <a href="#inicio">Volver arriba</a></p>
+      <p>© 2026 IEEE Computer Society ITVer. IEEE y IEEE Computer Society son marcas de IEEE. <a href="#contenido">Volver arriba</a></p>
     </div>
   </footer>
 
   <script src="../../contenido/capitulo.js"></script>
+  <script src="../../contenido/eventos.js"></script>
+  <script src="../../contenido/noticias.js"></script>
+  <script src="../../contenido/proyectos.js"></script>
+  <script src="../../contenido/galeria.js"></script>
   <script src="../../contenido/aplicar.js"></script>
   <script src="main.js" defer></script>
+<!-- /comun:pie -->
 </body>
 </html>

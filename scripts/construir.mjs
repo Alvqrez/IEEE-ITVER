@@ -24,7 +24,7 @@ cpSync(join(ROOT, 'propuestas', 'assets'), join(DIST, 'assets'), {
   filter: (p) => !p.split(/[\\/]/).some((part) => SKIP.has(part)),
 });
 // 2. datos del capítulo
-cpSync(join(ROOT, 'contenido'), join(DIST, 'contenido'), { recursive: true });
+cpSync(join(ROOT, 'contenido'), join(DIST, 'contenido'), { recursive: true, filter: (p) => !p.endsWith('ejemplos.js') }); // ejemplos.js es solo para revisar el diseño
 // 3. la landing, en la raíz
 cpSync(src, DIST, { recursive: true });
 // 4. páginas adicionales (inicio de sesión, etc.), cuando existan

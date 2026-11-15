@@ -1,4 +1,5 @@
-/* Propuesta D · Moderna — island nav, copy chip, chapter badge (live thing), area wheel, pinned stepper, tabs. */
+/* Propuesta D · Moderna — island nav, chapter badge (live thing), area wheel, pinned stepper, month calendar.
+   Datos, filtros, calendario de eventos, compartir, visor y formulario de mensaje: contenido/aplicar.js. */
 (() => {
   const root = document.documentElement;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -138,24 +139,29 @@
     }
   });
 
-  /* ---------- projects: type filters (only when there are two or more types) ---------- */
-  const pj = document.querySelector('[data-proyectos]');
-  const bar = document.querySelector('[data-pj-filtros]');
-  const tipos = (pj?.dataset.tipos || '').split('|').filter(Boolean);
-  if (pj && bar && tipos.length > 1) {
-    const make = (label, value) => {
-      const b = document.createElement('button');
-      b.type = 'button'; b.textContent = label; b.dataset.value = value;
-      b.setAttribute('aria-pressed', value === '' ? 'true' : 'false');
-      b.addEventListener('click', () => {
-        bar.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-        pj.querySelectorAll('.pj').forEach((card) => card.classList.toggle('is-hidden', value !== '' && card.dataset.tipo !== value));
-      });
-      return b;
-    };
-    bar.append(make('Todos', ''), ...tipos.map((t) => make(t, t)));
-    bar.hidden = false;
-  }
+  /* ---------- this month, with today marked (events empty state) ---------- */
+  document.querySelectorAll('[data-mes-actual]').forEach((box) => {
+    const now = new Date();
+    const y = now.getFullYear(), m = now.getMonth(), today = now.getDate();
+    const first = (new Date(y, m, 1).getDay() + 6) % 7; // Monday first
+    const days = new Date(y, m + 1, 0).getDate();
+    const title = now.toLocaleDateString('es-MX', { month: 'long', year: 'numeric' });
+    const bar = document.createElement('div');
+    bar.className = 'frag-bar';
+    bar.innerHTML = '<span></span><span>Sin eventos publicados</span>';
+    bar.firstChild.textContent = title.charAt(0).toUpperCase() + title.slice(1);
+    const grid = document.createElement('div');
+    grid.className = 'cal-grid';
+    ['L', 'M', 'M', 'J', 'V', 'S', 'D'].forEach((d) => { const s = document.createElement('span'); s.className = 'cal-wd'; s.textContent = d; grid.append(s); });
+    for (let i = 0; i < first; i++) grid.append(document.createElement('span'));
+    for (let d = 1; d <= days; d++) {
+      const s = document.createElement('span');
+      s.className = 'cal-d' + (d < today ? ' is-past' : '') + (d === today ? ' is-today' : '');
+      s.textContent = String(d);
+      grid.append(s);
+    }
+    box.replaceChildren(bar, grid);
+  });
 
   /* ---------- scroll-driven stages (run only while on screen; no scroll listener) ---------- */
   const driven = [];

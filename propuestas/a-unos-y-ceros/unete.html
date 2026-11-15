@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es" data-assets="../assets/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Únete · IEEE Computer Society ITVer</title>
+  <meta name="description" content="Cómo unirte a IEEE Computer Society ITVer: síguenos, ven a una actividad y entra a un equipo. No necesitas experiencia previa ni ser miembro de IEEE; lo único que pedimos es participación.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Únete · IEEE Computer Society ITVer">
+  <meta property="og:description" content="Lo único que pedimos es participación. Así entras al capítulo de computación del Tec de Veracruz.">
+  <meta property="og:image" content="../assets/img/campus-itver.webp">
+  <meta property="og:locale" content="es_MX">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="secciones.css">
+</head>
+<body>
+<!-- comun:cabecera -->
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="top">
+    <a class="top-logo" href="index.html" aria-label="IEEE Computer Society ITVer: inicio">
+      <img src="../assets/logos/ieee-cs-orange.png" width="1040" height="318" alt="IEEE Computer Society">
+    </a>
+    <nav class="top-links" aria-label="Principal">
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="galeria.html">Galería</a>
+    </nav>
+    <a class="top-action" href="unete.html" aria-current="page">Únete al capítulo</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+      <span class="menu-word">Menú</span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="unete.html" aria-current="page">Únete al capítulo</a></li>
+      </ul>
+    </nav>
+    <p class="menu-redes"><a data-red="instagram" href="#">Instagram</a><a data-red="facebook" href="#">Facebook</a></p>
+  </div>
+<!-- /comun:cabecera -->
+
+  <main id="contenido">
+    <section class="phead" aria-labelledby="ph-title">
+      <nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Únete</span></nav>
+      <h1 class="phead-title" id="ph-title"><span class="line"><span class="line-in">Únete</span></span></h1>
+      <div class="phead-foot">
+        <p class="phead-sub">Lo único que pedimos es participación: no necesitas experiencia previa, ser de una carrera en particular ni ser miembro de IEEE.</p>
+        <ol class="phead-index" aria-label="En esta página">
+          <li><a href="#pasos">Cuatro pasos</a></li>
+          <li><a href="#mensaje">Escríbenos</a></li>
+          <li><a href="#membresia">Membresía IEEE</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="olist-sec wrap" id="pasos" aria-labelledby="steps-title">
+      <h2 class="sec-title" id="steps-title" data-reveal>Cuatro pasos</h2>
+      <ol class="olist">
+        <li data-reveal><span class="olist-n">01</span><h3>Síguenos</h3><p>En <a data-red="instagram" href="#">Instagram</a> y <a data-red="facebook" href="#">Facebook</a> publicamos cada actividad con fecha y lugar.</p></li>
+        <li data-reveal><span class="olist-n">02</span><h3>Ven a una actividad</h3><p>Talleres, charlas, visitas y retos abiertos a todo el Tec. Revisa los <a href="eventos.html">eventos</a>.</p></li>
+        <li data-reveal><span class="olist-n">03</span><h3>Entra a un equipo</h3><p>Elige un área y súmate a un proyecto del semestre.</p></li>
+        <li data-reveal><span class="olist-n">04</span><h3>Afíliate, si quieres</h3><p>La membresía de IEEE es opcional y suma la red internacional.</p></li>
+      </ol>
+    </section>
+
+    <!-- MESSAGE: the slip is the preview -->
+    <section class="join" id="mensaje" aria-labelledby="msg-title">
+      <div class="join-grid wrap">
+        <div class="join-copy">
+          <h2 id="msg-title">Escríbenos</h2>
+          <p>Llena lo que quieras y armamos el mensaje por ti. Nada se guarda: todo pasa en tu navegador.</p>
+          <form class="msg-form" data-mensaje novalidate>
+            <div class="fld" data-campo-form>
+              <label for="m-nombre">Nombre</label>
+              <input id="m-nombre" name="nombre" type="text" autocomplete="name" maxlength="60" required aria-describedby="m-nombre-error">
+              <p class="field-error" id="m-nombre-error" data-error="nombre" hidden>Escribe tu nombre para continuar.</p>
+            </div>
+            <div class="fld">
+              <label for="m-carrera">Carrera <span class="opt">(opcional)</span></label>
+              <input id="m-carrera" name="carrera" type="text" maxlength="80">
+            </div>
+            <div class="fld">
+              <label for="m-semestre">Semestre</label>
+              <select id="m-semestre" name="semestre">
+                <option value="">Prefiero no decir</option>
+                <option value="1.er">1.º</option><option value="2.º">2.º</option><option value="3.er">3.º</option><option value="4.º">4.º</option>
+                <option value="5.º">5.º</option><option value="6.º">6.º</option><option value="7.º">7.º</option><option value="8.º">8.º</option>
+                <option value="9.º">9.º</option><option value="10.º">10.º</option><option value="11.º">11.º</option><option value="12.º">12.º</option>
+              </select>
+            </div>
+            <fieldset class="fld">
+              <legend>Áreas que te interesan</legend>
+              <div class="chk-group">
+                <label class="chk"><input type="checkbox" name="areas" value="desarrollo de software"><span>Software</span></label>
+                <label class="chk"><input type="checkbox" name="areas" value="inteligencia artificial"><span>IA</span></label>
+                <label class="chk"><input type="checkbox" name="areas" value="ciencia de datos"><span>Datos</span></label>
+                <label class="chk"><input type="checkbox" name="areas" value="ciberseguridad"><span>Seguridad</span></label>
+                <label class="chk"><input type="checkbox" name="areas" value="computación en la nube"><span>Nube</span></label>
+                <label class="chk"><input type="checkbox" name="areas" value="ingeniería de software"><span>Ingeniería</span></label>
+                <label class="chk"><input type="checkbox" name="areas" value="tecnologías emergentes"><span>Emergentes</span></label>
+              </div>
+            </fieldset>
+            <button class="btn" type="submit">
+              <span data-mensaje-accion>Copiar y abrir Instagram</span>
+              <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <p class="field-help" data-sin-correo>Instagram no deja escribir el mensaje por ti: lo copiamos y solo lo pegas en el chat.</p>
+          </form>
+        </div>
+        <div class="slip slip-msg">
+          <h3 class="slip-when">Tu mensaje</h3>
+          <p class="slip-to">Para <a data-red="instagram" href="#"><span data-red-usuario>@computersociety.itver</span></a></p>
+          <p class="slip-body" data-mensaje-vista>Hola, soy [tu nombre]. Quiero participar en el capítulo.</p>
+          <p class="slip-total"><span>Listo para enviar</span><span>1 min</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP on blue -->
+    <section class="stmt stmt-blue" id="membresia" aria-labelledby="mem-title">
+      <div class="stmt-head"><h2 id="mem-title">Membresía IEEE, si quieres</h2></div>
+      <p class="stmt-text">Para el capítulo basta con participar. Si además te afilias a IEEE y a Computer Society, te sumas a su red internacional y a competencias como IEEEXtreme, que es para equipos de miembros estudiantes.</p>
+      <p class="stmt-links"><a href="https://www.ieee.org/membership/join/index.html" rel="noopener">Membresía estudiantil IEEE ↗</a><a href="https://www.computer.org/membership" rel="noopener">IEEE Computer Society ↗</a></p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq wrap" id="preguntas" aria-labelledby="faq-title">
+      <h2 class="sec-title" id="faq-title">Preguntas frecuentes</h2>
+      <div class="faq-list">
+        <details open><summary>¿Necesito experiencia previa?</summary><p data-provisional>No. Los talleres empiezan desde cero y los equipos mezclan semestres para que aprendas con quien ya sabe.</p></details>
+        <details><summary>¿Tengo que estudiar Sistemas Computacionales?</summary><p data-provisional>No. El capítulo está abierto a estudiantes del ITVER de cualquier carrera con interés en la computación.</p></details>
+        <details><summary>¿Necesito ser miembro de IEEE para participar?</summary><p>No. Lo único que pedimos es participación. La membresía estudiantil de IEEE es opcional y suma la red internacional.</p></details>
+        <details><summary>¿Cuánto cuesta?</summary><p>Para el capítulo solo pedimos que participes. Si además quieres la membresía de IEEE y de Computer Society, sus cuotas se consultan en <a href="https://www.ieee.org/membership/join/index.html" rel="noopener">ieee.org</a>.</p></details>
+        <details><summary>¿Qué es IEEEXtreme?</summary><p>Una competencia de programación de 24 horas que IEEE organiza cada año para equipos de miembros estudiantes de todo el mundo.</p></details>
+        <details><summary>¿Cómo me entero de los eventos?</summary><p>En la página de <a href="eventos.html">eventos</a> y en el <a data-red="instagram" href="#">Instagram</a> y el <a data-red="facebook" href="#">Facebook</a> del capítulo.</p></details>
+      </div>
+    </section>
+
+<!-- comun:pie -->
+    <!-- SOCIAL + CONTACT: the handle as display type, on every page -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-top">
+        <div class="contact-say">
+          <h2 class="contact-title" id="contact-title">Síguenos en redes y escríbenos para unirte, proponer un taller o colaborar.</h2>
+          <p class="contact-place">Instituto Tecnológico de Veracruz · Veracruz, Ver., México</p>
+        </div>
+        <ul class="contact-links">
+          <li><a href="#" data-red="instagram">Instagram del capítulo</a></li>
+          <li><a href="#" data-red="facebook">Facebook del capítulo</a></li>
+          <li><a href="https://www.computer.org" rel="noopener">computer.org</a></li>
+          <li><a href="https://www.instagram.com/ieee_computer_society/" rel="noopener">@ieee_computer_society</a></li>
+        </ul>
+      </div>
+      <a class="contact-mail" href="#" data-correo data-correo-sin="@computersociety.itver">
+        <span data-correo-texto>@computersociety.itver</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER: name first -->
+  <footer class="foot">
+    <p class="foot-name" aria-hidden="true">IEEE CS ITVER</p>
+    <div class="foot-row wrap">
+      <ul class="foot-places">
+        <li><a href="https://www.computer.org" rel="noopener">computer.org</a></li>
+        <li><a href="https://www.ieee.org" rel="noopener">ieee.org</a></li>
+        <li><a href="unete.html" aria-current="page">Únete</a></li>
+      </ul>
+      <div class="foot-cols">
+        <ul>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a data-red="instagram" href="#">Instagram</a></li>
+          <li><a data-red="facebook" href="#">Facebook</a></li>
+        </ul>
+        <div class="foot-brand">
+          <img src="../assets/logos/ieee-cs-white.png" width="1040" height="318" alt="IEEE Computer Society" loading="lazy">
+          <p>IEEE Computer Society ITVer · Instituto Tecnológico de Veracruz</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-legal wrap">
+      <p class="credits">Imágenes: <a href="https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_(full_resolution).jpg" rel="noopener">“Two women operating ENIAC”</a> y <a href="https://commons.wikimedia.org/wiki/File:Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg" rel="noopener">“Glen Beck and Betty Snyder program the ENIAC”</a>, Ejército de EE. UU., dominio público; <a href="https://commons.wikimedia.org/wiki/File:ENIAC_Function_Table_B_midsection_close-up.jpg" rel="noopener">“ENIAC Function Table B midsection close-up”</a>, Logg Tandy, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>; todas vía Wikimedia Commons. Fotografía del campus: archivo del capítulo.</p>
+      <p>© 2026 IEEE Computer Society ITVer. IEEE y IEEE Computer Society son marcas de IEEE. <a href="#contenido">Volver arriba</a></p>
+    </div>
+  </footer>
+
+  <script src="../../contenido/capitulo.js"></script>
+  <script src="../../contenido/eventos.js"></script>
+  <script src="../../contenido/noticias.js"></script>
+  <script src="../../contenido/proyectos.js"></script>
+  <script src="../../contenido/galeria.js"></script>
+  <script src="../../contenido/aplicar.js"></script>
+  <script src="main.js" defer></script>
+<!-- /comun:pie -->
+</body>
+</html>
