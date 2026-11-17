@@ -13,6 +13,11 @@ node_modules/
 propuestas/assets/found/*
 !propuestas/assets/found/credits.json
 
+# Propuestas de landing descartadas: solo se versionan A y D.
+propuestas/b-paleta-del-campus/
+propuestas/c-actas/
+propuestas/e-vitrina/
+
 # Sistema y editor
 Thumbs.db
 Desktop.ini
